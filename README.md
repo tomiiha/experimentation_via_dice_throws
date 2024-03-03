@@ -1,1 +1,1 @@
-# experimentation_dice_throws
+# Experimentation via Dice Throws
