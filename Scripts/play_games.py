@@ -1,10 +1,10 @@
-def play_games(number_of_games,dice_throws):
+def play_games(number_of_games=20,dice_throws=10,rigging=1):
     fair_dice_wins = 0
     rigged_dice_wins = 0
     ties = 0
 
     for _ in range(number_of_games):
-        fair_dice, rigged_dice = throw_dice(dice_throws)
+        fair_dice, rigged_dice = throw_dice(dice_throws,rigging)
 
         if sum(fair_dice) > sum(rigged_dice):
             fair_dice_wins += 1
